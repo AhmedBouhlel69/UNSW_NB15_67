@@ -1,0 +1,94 @@
+Je tenais à vous remercier sincèrement pour l'investissement que vous avez montré tout au long de ce projet. Le travail accompli est solide, rigoureux, et je suis convaincu qu'il sera à la hauteur des exigences d'une publication internationale. Cette dernière étape est la plus courte et paradoxalement l'une des plus importantes, car c'est ce que le reviewer voit en premier. Nous sommes très proches de la ligne d'arrivée. Encore bravo, et merci pour votre sérieux.
+
+Vous trouverez en pièce jointe le dossier complet du projet : main.tex, references.bib, toutes les figures, et le notebook.
+
+L'article est structurellement complet. Il reste deux types de tâches avant soumission, réparties équitablement entre vous :
+
+  (1) FIGURES : traduire en anglais tous les textes français visibles dans les figures (titres, axes, légendes), régénérer chaque figure depuis le notebook, et la déposer dans le dossier en remplacement de l'ancienne.
+
+  (2) ARTICLE : relire votre section assignée et reformuler naturellement les passages trop uniformes ou trop rigides, sans modifier le sens scientifique ni aucune valeur numérique.
+
+Règles à respecter impérativement :
+  ✅ Reformuler les phrases, varier les structures, ajouter des connecteurs naturels.
+  ✅ Remplacer un mot par un synonyme plus courant ou une tournure plus directe.
+  ❌ Ne jamais modifier les valeurs numériques, équations, noms de modèles ou de datasets.
+  ❌ Ne pas toucher aux tableaux, légendes LaTeX, et références bibliographiques.
+
+
+══════════════════════════════════════════════════════
+MOHAMED DHIA CHAOUACHI
+══════════════════════════════════════════════════════
+
+▸ FIGURES (2 figures)
+  • class_count_attack_cat.png
+      "Effectifs par classe (échelle linéaire)"      → "Class counts (linear scale)"
+      "Effectifs par classe (échelle logarithmique)" → "Class counts (logarithmic scale)"
+
+  • Top_30_features_mi_score.png
+      "Top 30 features — Les 25 sélectionnées en bleu foncé"
+                                 → "Top 30 features — The 25 selected features in dark blue"
+      "Score d'Information Mutuelle" → "Mutual Information Score"
+
+  Pour chaque figure : localiser la cellule correspondante dans le notebook, corriger les plt.title(), plt.xlabel(), plt.ylabel() et labels de légende, puis exporter la figure en PNG.
+
+▸ ARTICLE
+  • Abstract : si une phrase enchaîne trop de propositions sans respiration, coupez-la en deux.
+  • Section I (Introduction) : vérifiez les transitions entre paragraphes. Chaque paragraphe doit amener naturellement le suivant.
+  • Section II (Related Work) : variez les formulations d'introduction des références et ajoutez des transitions analytiques entre les 4 sous-sections.
+
+
+══════════════════════════════════════════════════════
+RAYEN SEBAI
+══════════════════════════════════════════════════════
+
+▸ FIGURES (2 figures)
+  • conf_matrix_baseline_xgboost.png
+      "Matrice de confusion normalisée — XGBoost Baseline" → "Row-Normalised Confusion Matrix — XGBoost Baseline"
+      "Réel"   → "True label"
+      "Prédit" → "Predicted label"
+
+  • evolution_of_weights.png
+      "Évolution des poids adversariaux q_g" → "Adversarial group weights q_g"
+      "Perte moyenne par groupe"             → "Mean loss per group"
+      "Poids uniforme"                       → "Uniform weight"
+
+▸ ARTICLE
+  • Section III (Dataset) : ajoutez une phrase d'explication intuitive avant et après les équations des métriques — pourquoi Macro-F1 plutôt qu'Accuracy, en langage direct.
+  • Section IV-A (Preprocessing) : rédigez une ou deux phrases de contexte narratif avant le tableau des colonnes supprimées.
+  • Section IV-B (Feature Selection) : assurez-vous que la justification du choix de l'Information Mutuelle est accessible, pas trop scolaire.
+  • Section IV-C et IV-D (Baseline + Static Weighting) : vérifiez que la transition entre les deux sous-sections est logique et naturelle.
+
+
+══════════════════════════════════════════════════════
+AHMED BOUHLEL
+══════════════════════════════════════════════════════
+
+▸ FIGURES (3 figures)
+  • macro_f1_vs_minority_f1.png
+      "Étude d'ablation — Macro-F1 vs Minority-F1" → "Ablation Study — Macro-F1 vs Minority-F1"
+      "Poids Statiques"                            → "Static Weights"
+
+  • PrecisionRecallcurvesforthefourminorityclasses_.png
+      "Courbes Precision-Recall — Classes Minoritaires" → "Precision-Recall Curves — Minority Classes"
+      "Rappel"                                          → "Recall"
+
+  • Class_Overlap_AnalysistSNE_Visualisation.png
+      "t-SNE — Chevauchement {Analysis, Backdoor, DoS, Exploits}"
+                          → "t-SNE — Overlap {Analysis, Backdoor, DoS, Exploits}"
+
+▸ ARTICLE
+  • Section IV-E (Group DRO) : ajoutez une phrase d'intuition avant chaque bloc d'équations — le reviewer doit comprendre l'idée avant de lire la formule.
+  • Section IV-F (Threshold Optimisation) : vérifiez que l'explication de l'absence de réentraînement est claire et directe.
+  • Section V (Experimental Setup) : ajoutez une justification courte pour les choix principaux (pourquoi 10 seeds, pourquoi Wilcoxon, pourquoi Bonferroni).
+  • Section VI (Results) : chaque résultat chiffré doit être suivi d'une interprétation courte — si une phrase dit seulement "le modèle obtient X", ajoutez "ce qui signifie que..." ou "ce résultat confirme que...".
+
+
+══════════════════════════════════════════════════════
+COORDINATION
+══════════════════════════════════════════════════════
+
+Je prends en charge la Section VII (Discussion) et la Section VIII (Conclusion), ainsi que la relecture globale de cohérence une fois toutes les contributions fusionnées.
+
+Merci de m'envoyer :
+  → Votre version modifiée du fichier main.tex (votre section uniquement)
+  → Les nouvelles figures en PNG (noms de fichiers identiques aux originaux)
